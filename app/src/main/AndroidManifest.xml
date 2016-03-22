@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>  <!-- xml문서임을 선언 --> <!-- 유닉스, 맥, 웹 가장 일반적 -->
+<!-- encoding = utf-8(유니코드방식)은 맥, 웹에서 가장 일반적. (cp949, EUC-KR...) -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.hs.e_mirim.eunji057.helloandroid">
+    <!-- xmlns는 xml의 namespace -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"> <!-- 태그 닫기 -->
+        <activity android:name="MainActivity"> <!-- activity 화면 개수, activity이름과 같은 자바 파일이 있어야함 -->
+            <intent-filter> <!-- activity에서 하나만 존재 -->
+                <action android:name="android.intent.action.MAIN" /> <!-- 여러가지 activity중 intent?action?있는게 가장 먼저 실행(main) -->
+
+                <category android:name="android.intent.category.LAUNCHER" /> <!-- 런처 -->
+            </intent-filter>
+        </activity>
+    </application>
+    <!-- icon 확장자 알아서 인식 동일 파일 이름 있으면 안됨! -->
+    <!-- label 앱의 이름 -->
+    <!-- theme 테마 -->
+
+</manifest>
